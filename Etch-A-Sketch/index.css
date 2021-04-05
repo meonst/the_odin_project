@@ -1,0 +1,18 @@
+.single_grid {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.black_background {
+    background-color: black;
+}
+
+.grid_row {
+    display: flex;
+}
+#grid_container {
+    width: 960px;
+    height: 960px;
+    border-style: solid;
+    border-width: 3px;
+    
+}

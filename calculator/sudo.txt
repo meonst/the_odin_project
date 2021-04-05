@@ -1,0 +1,26 @@
+sudo code for calculator
+upon clicking a number button
+	if the most recent input was an operator
+		the number should be the first of the next operand
+	else
+		the number should be appended to the current number on screen
+
+upon clicking a operator button
+	if there was a operator before
+		show the result of the operation before
+	if the most recent input was an operator
+		change the next operator
+
+
+upon clicking a delete button
+	if the number on the panel is 0
+		do nothing
+	if the number on the panel is not 0 and the most recent input was an operator
+		do nothing
+	if the number on the panel is not 0 and bigger than two digits 
+		remove the right most number
+	if the number on the panel is one digit
+		change it to 0
+	
+upon clicking a clear button
+	set the state to the beginning

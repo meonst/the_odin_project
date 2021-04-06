@@ -1,0 +1,38 @@
+#bookshelf {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(5, 230px);
+    grid-template-rows: 320px ;
+    grid-row: auto;
+    grid-column: auto;
+}
+
+#add_new_book {
+    display: flex;
+}
+.book {
+    width: 200px !important;
+    height: 280px !important;
+    display: flex;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+    white-space: pre;
+
+}
+
+.delete_button {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    top: 265px;
+}
+
+.completion_button {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    top: 240px;
+}

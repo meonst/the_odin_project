@@ -1,0 +1,25 @@
+#gameboard {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px)
+}
+#result_and_reset {
+    display: flex;
+    margin-top: 3px;
+}
+#result {
+    margin-top: 5px;
+    width: 200px;
+    text-align: center;
+}
+#reset {
+    width: 100px;
+    text-align: center;
+}
+.board_button {
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 1px;
+}

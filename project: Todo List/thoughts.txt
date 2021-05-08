@@ -1,0 +1,37 @@
+
+I will have one json? file to have all the projects.
+In each projects all the assignments will go in.
+
+projects will each have
+    1. title: must be unique
+    child
+        assignments
+
+assignments will each have
+    1. title: must be unique
+    2. description
+    3. due_date
+    4. priority
+    5. parent project
+
+
+blueprint of the layout
+
+{
+    "project 1": {
+        "assignment 1": {
+            "title": title,
+            "description": description,
+            "due_date": due_date,
+            "priority": priority,
+            "parent_project": parent_project,
+        },
+        "assignment 2": {
+            "title": title,
+            "description": description,
+            "due_date": due_date,
+            "priority": priority,
+            "parent_project": parent_project,
+        },
+    }
+}

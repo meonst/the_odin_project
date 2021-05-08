@@ -1,0 +1,67 @@
+#body {
+    margin: 0px;
+    background-color: rgba(100, 100, 100, 0.1)
+}
+
+.header {
+    margin: 10px;
+    font-size: 30pt;
+    min-height: 47px;
+}
+.main {
+    margin: 10px;
+}
+.footer {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 10px;
+    font-size: 15pt;
+    
+}
+
+.project {
+    display: grid;
+    width: 920px;
+    margin-bottom: 10px;
+
+    grid-template-columns: 900px 20px;
+    grid-template-rows: 20px auto;
+    grid-template-areas: 
+        "project_name project_delete"
+        "assignment_group assignment_group"
+        "new_assignment new_assignment";
+}
+.project_name {
+    grid-area: project_name;
+}
+.new_assignment {
+    grid-area: new_assignment;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+}
+.assignment_group {
+    grid-area: assignment_group;
+    width: 940px;
+}
+.assignment {
+    display: grid;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    grid-template-columns: 200px 500px 100px 100px 20px;
+}
+.project:hover .project_delete{
+    visibility: visible;
+}
+.project_delete {
+    grid-area: project_delete;
+    visibility: hidden;
+}
+
+.assignment:hover .assignment_delete {
+    visibility: visible;
+}
+.assignment_delete {
+    visibility: hidden;
+}

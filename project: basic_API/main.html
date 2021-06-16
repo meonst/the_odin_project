@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <img src="#" style="width: 500px; height: 500px;"/>
+    <div>
+    <input type="text" id="keyword" value="dog">
+    <button id="new_image">Get new Image</button>
+    
+    </div>
+    <script>
+        const image = document.querySelector("img");
+        let refresh_image = async function(keyword) {
+            let fetch_image = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=VK6D7ieDsiUy3xfGoyDUxSdCLGFePKyk&s=${keyword}`, {mode: "cors"})
+            let json_fetched = await fetch_image.json()
+            image.src = json_fetched.data.images.original.url
+
+            
+        }
+        
+        const new_image = document.getElementById("new_image");
+        const keyword = document.getElementById("keyword");
+        refresh_image(keyword.value);
+        new_image.addEventListener("click", () => {
+            refresh_image(keyword.value)
+        })
+
+    </script>
+</body>
+</html>
